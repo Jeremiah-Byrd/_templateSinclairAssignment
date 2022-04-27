@@ -9,15 +9,14 @@ using namespace std;
 
 template<typename T>
 T half(T variable) {
+	//Returning a halfed variable
+	return (variable / 2);
+}
 
-	//Checking if the variable is a integer
-	if (variable == int()) {
-		return round(variable / 2);
-	}
-	else
-	{
-		return variable / 2;
-	}
+
+int half(int variable) {
+	//Returning a rounded halfed variable
+	return (round(variable / 2.0));
 }
 
 int main() {

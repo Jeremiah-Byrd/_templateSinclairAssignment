@@ -3,10 +3,13 @@
 // April 26, 2022
 #include<iostream>
 #include<iomanip>
-#include<template>
+#include<tgmath.h>
+
 using namespace std;
 
 //Prototypes 
+template<class T>
+T half(T);
 
 int main() {
 	//Variables 
@@ -24,4 +27,12 @@ int main() {
 template<class T>
 T half(T variable) {
 
+	//Checking if the variable is a integer
+	if (variable == (int)variable) {
+		return round(variable / 2);
+	}
+	else
+	{
+		return variable / 2;
+	}
 }

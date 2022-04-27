@@ -3,13 +3,22 @@
 // April 26, 2022
 #include<iostream>
 #include<iomanip>
-#include<tgmath.h>
+#include<cmath>
 
 using namespace std;
 
-//Prototypes 
-template<class T>
-T half(T);
+template<typename T>
+T half(T variable) {
+
+	//Checking if the variable is a integer
+	if (variable == int()) {
+		return round(variable / 2);
+	}
+	else
+	{
+		return variable / 2;
+	}
+}
 
 int main() {
 	//Variables 
@@ -22,17 +31,9 @@ int main() {
 	cout << half(b) << endl;
 	cout << half(c) << endl;
 
+	//End Program prompt
+	cout << "\nTo end program press enter...";
+	cin.ignore();
+	cin.get();
 }
 
-template<class T>
-T half(T variable) {
-
-	//Checking if the variable is a integer
-	if (variable == (int)variable) {
-		return round(variable / 2);
-	}
-	else
-	{
-		return variable / 2;
-	}
-}

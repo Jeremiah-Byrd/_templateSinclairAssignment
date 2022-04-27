@@ -20,3 +20,8 @@ int main() {
 	cout << half(c) << endl;
 
 }
+
+template<class T>
+T half(T variable) {
+
+}
